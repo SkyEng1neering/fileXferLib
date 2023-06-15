@@ -18,8 +18,7 @@ List of protocol limitations:
 - Currently not supported fragmentation of FILES_LIST_RES packet, so case when total list of files doesn't fit to FILES_LIST_RES packet is available (in case of little WINDOW_SIZE or big amount of files stored in requested device)
 - It is possible to request list of available file names from respondent, but not the file sizes
 - File name length max is 255 bytes
-- Maximum files number on storage is 65535 bytes
--
+- Maximum files number on storage is 255
 
 ## Protocol description
 #
