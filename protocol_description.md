@@ -1,25 +1,3 @@
-# fileXferLib
-_Library for p2p files transfer_
-
-May be used for p2p files transfer files using any interface between 2 points
-
-## Features
-List of features supported by the protocol:
-- File send
-- File request
-- Get available files list
-- Get hash for concrete file
-
-## Limitations
-List of protocol limitations:
-- Designed for transfer files up to 1 MB
-- Commands are handled synchronously
-- Directories aren't supported, it used for 'plain' files structure
-- Currently not supported fragmentation of FILES_LIST_RES packet, so case when total list of files doesn't fit to FILES_LIST_RES packet is available (in case of little WINDOW_SIZE or big amount of files stored in requested device)
-- It is possible to request list of available file names from respondent, but not the file sizes
-- File name length max is 255 bytes
-- Maximum files number on storage is 255
-
 ## Protocol description
 #
 #### Common packets structure
