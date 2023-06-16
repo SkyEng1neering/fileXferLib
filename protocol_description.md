@@ -90,7 +90,7 @@ Used to request hash of specific file.
 **Packet format:**
 | PREAMBLE | MSG_ID | LEN | PAYLOAD | CRC |
 | ------ | ------ | ------ |------ |------ |
-| 0xDEADBEEF | 5 | 2 to WINDOW_SIZE | { NAME_LEN (uint8_t), NAME (uint8_t *) } | crc32 |
+| 0xDEADBEEF | 5 | 1 to WINDOW_SIZE | NAME (uint8_t *) | crc32 |
 ---
 
 **FILE_HASH_RES**
@@ -108,7 +108,7 @@ Used to request of send specific file.
 **Packet format:**
 | PREAMBLE | MSG_ID | LEN | PAYLOAD | CRC |
 | ------ | ------ | ------ |------ |------ |
-| 0xDEADBEEF | 7 | 2 to WINDOW_SIZE | { NAME_LEN (uint8_t), NAME (uint8_t *) } | crc32 |
+| 0xDEADBEEF | 7 | 1 to WINDOW_SIZE | NAME (uint8_t *) | crc32 |
 ---
 
 **FILE_RECEIVE_REQ**
@@ -117,7 +117,7 @@ Used to request specific file.
 **Packet format:**
 | PREAMBLE | MSG_ID | LEN | PAYLOAD | CRC |
 | ------ | ------ | ------ |------ |------ |
-| 0xDEADBEEF | 8 | 2 to WINDOW_SIZE | { NAME_LEN (uint8_t), NAME (uint8_t *) } | crc32 |
+| 0xDEADBEEF | 8 | 1 to WINDOW_SIZE | NAME (uint8_t *) | crc32 |
 ---
 
 **FILE_DATA**
